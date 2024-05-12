@@ -1,5 +1,9 @@
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("somya/Build");
-    eleventyConfig.addPassthroughCopy("somya/TemplateData");
-
+    eleventyConfig.addPassthroughCopy("src/somya/Build");
+    eleventyConfig.addPassthroughCopy("src/somya/TemplateData");
+    return {
+        dir: {
+            input: 'src',
+        },
+    };
 };
